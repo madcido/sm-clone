@@ -1,6 +1,9 @@
 a {
   text-decoration: none;
 }
+b{
+  color: rgba(0,0,0,.8);
+}
 .row{
   display: flex;
 }
@@ -122,7 +125,7 @@ a {
 .top-links {
   height: 170px;
   width: 100%;
-  background-color: rgba(130, 130, 130, 0.5);
+  background-color: rgba(130, 130, 130, 0.6);
   display: flex;
   justify-content: flex-end;
 }
@@ -309,6 +312,16 @@ a {
 .grid-tile h2{
   font-size: 40px;
   margin-bottom: 0;
+}
+
+.grid2x2 a:hover h2{
+  color: white;
+  animation: arrow .4s ease-in infinite alternate;
+}
+
+@keyframes arrow {
+  from {transform: translateX(0);}
+  to {transform: translateX(40px);}
 }
 
 .upper-left {
