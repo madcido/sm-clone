@@ -407,7 +407,7 @@ a {
 }
 
 .latest-posts div.post:hover {
-  transform: scale(1.15);
+  transform: scale(1.15) translateX(-18px);
   box-shadow: 0 0 20px 1px rgba(0,0,0,0.7);
   z-index: 1;
 }
@@ -419,14 +419,149 @@ a {
   width: 100%;
   height: 500px;
   background: linear-gradient(45deg, gray, silver, gray);
-  text-align: center;
   border-radius: 20px;
+  position: relative;
 }
 
 .advertising h2 {
   font-size: 8vw;
-  color: rgba(0,0,0,.8);
-  line-height: 500px;
+  font-family: monospace;
+  color: black;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  transition: all 2s ease;
+}
+
+.a{
+  left: 50%;
+  margin-left: -480px;
+}
+
+.d{
+  left: 50%;
+  margin-left: -390px;
+}
+
+.v{
+  left: 50%;
+  margin-left: -300px;
+}
+
+.e{
+  left: 50%;
+  margin-left: -210px;
+}
+
+.r{
+  left: 50%;
+  margin-left: -120px;
+}
+
+.t{
+  left: 50%;
+  margin-left: -30px;
+}
+
+.i1{
+  left: 50%;
+  margin-left: 60px;
+}
+
+.s{
+  left: 50%;
+  margin-left: 150px;
+}
+
+.i2{
+  left: 50%;
+  margin-left: 240px;
+}
+
+.n{
+  left: 50%;
+  margin-left: 330px;
+}
+
+.g{
+  left: 50%;
+  margin-left: 420px;
+}
+
+.advertising:hover .a{
+  top: 180px;
+  margin-left: -210px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .d{
+  top: 180px;
+  margin-left: -120px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .v{
+  margin-left: 420px;
+  animation-name: ad-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.advertising:hover .e{
+  top: 180px;
+  margin-left: 60px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .r{
+  top: 180px;
+  margin-left: -300px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .t{
+  top: 180px;
+  margin-left: 240px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .i1{
+  top: 180px;
+  margin-left: -30px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .s{
+  top: 180px;
+  margin-left: 330px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .i2{
+  margin-left: -480px;
+  animation-name: ad-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.advertising:hover .n{
+  top: 180px;
+  margin-left: 150px;
+  transform: rotate(360deg);
+}
+
+.advertising:hover .g{
+  top: 180px;
+  margin-left: -390px;
+  transform: rotate(360deg);
+}
+
+@keyframes ad-animation {
+  0 {transform: rotate(0); color: blue; top: 0;}
+  50% {transform: rotate(180deg); color: red; top: 180px;}
+  100% {transform: rotate(360deg); color: blue; top: 0;}
 }
 
 
