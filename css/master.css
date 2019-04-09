@@ -129,19 +129,21 @@ a {
 
 .logo {
   width: 20%;
+  background-image: url("../images/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.logo img {
-  margin: 50px 10px;
-  width: 80%;
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .search{
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin: 60px auto;
-  width: 120px;
   padding: 5px 0;
   border: 3px solid white;
   border-radius: 6px;
@@ -150,7 +152,7 @@ a {
 .search img{
   width: 22px;
   height: 22px;
-  margin: 5px 0;
+  margin: 5px 10px;
   filter: brightness(100);
 }
 
@@ -159,7 +161,8 @@ a {
 }
 
 .search p{
-  margin: 0 5px;
+  margin: 0;
+  margin-right: 10px;
   padding: 0;
   transform: rotate(0deg);
   line-height: 30px;
@@ -172,10 +175,14 @@ a {
 .header-tile {
   width: 14%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-link {
-  height: 170px;
+  height: 100%;
+  display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,6 +208,7 @@ a {
   font-size: 12px;
   font-family: verdana;
   font-style: italic;
+  width: 70%;
   margin: 0;
   line-height: 15px;
 }
@@ -758,7 +766,7 @@ a {
 .sr-shadow{
   position: absolute;
   top: 33px;
-  right: 138px;
+  left: -45px;
   background: radial-gradient(rgba(0,0,0,.3) 5%, rgba(0,0,0,.2), rgba(0,0,0,.1), rgba(0,0,0,.05), rgba(0,0,0,.02), rgba(0,0,0,.01), rgba(0,0,0,0) 50%);
   width: 150px;
   height: 30px;
@@ -786,4 +794,25 @@ a {
 
 .grid-tile img:hover + .grid-shadow{
   opacity: 0;
+}
+
+
+/* MEDIAS */
+
+@media (max-width: 1050px){
+  .header-link p, .header-link h2{
+    display: none;
+  }
+  .top-links{
+    height: 100px;
+  }
+  .search p{
+    display: none;
+  }
+  .center-p, .srlred{
+    top: 140px;
+  }
+  .srlred p{
+    display: none;
+  }
 }
