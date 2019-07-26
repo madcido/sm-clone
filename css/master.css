@@ -57,6 +57,7 @@ a {
     cursor: pointer;
     display: flex;
     align-items: start;
+    outline: none;
 }
 
 .sr-ext{
